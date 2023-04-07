@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./output.css">
   <title>Components by Dr-Phi</title>
 </head>
+
 <body>
-    <div class="text-white bg-slate-800">
-      <p class="mx-7"><span class="text-sky-400 text-xl ">Callout cards</span><br>  Are used to encourage merchants to take an action related to a new feature or opportunity.
+  <div class="text-white bg-slate-800 h-full flex justify-center flex-col justify-items-center px-9">
+
+    <div id="comp-one">
+      <p class="mx-7 pt-5"><span class="text-sky-400 text-xl ">Callout cards</span><br> Are used to encourage merchants to
+        take an action related to a new feature or opportunity.
       </p>
-      <main class="border-slate- 100 mx-7 my-5 flex justify-between rounded-xl border hover:shadow-cyan-500/50 shadow-xl text-slate-950 bg-white">
+      <main
+        class="container md border-slate- 100 mx-7 my-5 flex justify-between rounded-xl border hover:shadow-cyan-500/50 shadow-xl text-slate-950 bg-white">
         <div>
           <h1 class="px-5 py-4 text-lg font-semibold">Customize the style of your checkout</h1>
           <p class="ps-5">Upload your store's logo, change colors and fonts, and more.</p>
@@ -19,17 +25,59 @@
             class="mx-5 my-5 hover:bg-slate-100 bg-slate-50 rounded-md border-2 border-neutral-300 px-5 py-2 font-medium">Customize
             checkout</button>
         </div>
-        <img class="me-6 w-[7rem]"
-          src="./assets/paint-bucket.svg"
-          alt="customize checkout button" />
+        <img class="me-6 w-[7rem]" src="./assets/paint-bucket.svg" alt="customize checkout button" />
       </main>
       <p class="mb-2 pe-9 text-right">⬆️ Taken from <a class="rounded-md border p-1"
-          href="https://polaris.shopify.com/components/layout-and-structure/callout-card" target="_blank">Callout card </a>
+          href="https://polaris.shopify.com/components/layout-and-structure/callout-card" target="_blank">Callout card
+        </a>
       </p>
-      
+
       <hr />
     </div>
- 
-  
+
+    <div id="comp-two">
+      <p class="mx-7 pt-4"><span class="text-sky-400 text-xl ">Empty state</span><br> Are used when a list, table, or chart has no items or data to show. This is an opportunity to provide explanation or
+      guidance to help merchants progress.
+      </p>
+      <main class="border-slate-100 mx-auto container md my-5 flex justify-center rounded-xl border hover:shadow-cyan-500/50 shadow-xl text-slate-950 bg-white">
+        <div class=" m-4 p-20 grid place-items-center">
+          <img src="./assets/emptystate-files.webp" alt="document sample">
+          <h3 class="font-bold mb-3">Manage your inventory transfers</h3>
+          <p class="mb-5 px-[6rem] text-center text-slate-600">Track and receive your incoming inventory from suppliers.</p>
+          <div>
+          <button class=" border font-semibold rounded border-slate-400 hover:bg-slate-100 py-1 px-4 me-2">Learn more</button>
+          <button class="bg-green-800 hover:bg-green-900 py-1 px-4  border border-slate-400  rounded text-white font-semibold ">Add transfer</button>
+          </div>
+        </div>
+      </main>
+      <p class="mb-2 pe-9 text-right">⬆️ Taken from <a class="rounded-md border p-1"
+          href="https://polaris.shopify.com/components/layout-and-structure/empty-state" target="_blank">Empty state
+        </a>
+        
+      </p>
+      <hr/>
+    </div>
+
+    <div id="comp-three">
+      <p class="mx-7 pt-4"><span class="text-sky-400 text-xl ">Media card</span><br> provide a consistent layout to present visual information to merchants. Visual media is used to provide additional
+      context to the written information it's paired with.
+      </p>
+      <main class="">
+        <div>Hello</div>
+
+      </main>
+      <p class="mb-2 pe-9 text-right">⬆️ Taken from <a class="rounded-md border p-1"
+          href="https://polaris.shopify.com/components/layout-and-structure/media-card" target="_blank">Media card
+        </a>
+      
+      </p>
+      <hr />
+
+
+
+  </div>
+
+
 </body>
+
 </html>
