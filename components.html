@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./output.css">
+  <script src="./index.js" defer></script>
   <title>Components by Dr-Phi</title>
 </head>
 
@@ -13,11 +14,11 @@
   <div class="text-white bg-slate-800 h-full flex justify-center flex-col justify-items-center px-9">
 
     <div id="comp-one">
-      <p class="mx-7 pt-5"><span class="text-sky-400 text-xl ">Callout cards</span><br> Are used to encourage merchants to
+      <p class="mx-7 pt-5 text-right"><span class="text-sky-400 text-xl ">Callout cards</span><br> Are used to encourage merchants to
         take an action related to a new feature or opportunity.
       </p>
       <main
-        class="container md border-slate- 100 mx-7 my-5 flex justify-between rounded-xl border hover:shadow-cyan-500/50 shadow-xl text-slate-950 bg-white">
+        class="container max-w-3xl md ms-auto border-slate- 100 mx-7 my-5 flex justify-between rounded-xl border hover:shadow-cyan-500/50 shadow-xl text-slate-950 bg-white">
         <div>
           <h1 class="px-5 py-4 text-lg font-semibold">Customize the style of your checkout</h1>
           <p class="ps-5">Upload your store's logo, change colors and fonts, and more.</p>
@@ -39,7 +40,7 @@
       <p class="mx-7 pt-4"><span class="text-sky-400 text-xl ">Empty state</span><br> Are used when a list, table, or chart has no items or data to show. This is an opportunity to provide explanation or
       guidance to help merchants progress.
       </p>
-      <main class="border-slate-100 mx-auto container md my-5 flex justify-center rounded-xl border hover:shadow-cyan-500/50 shadow-xl text-slate-950 bg-white">
+      <main class="border-slate-100 max-w-3xl me-auto container md my-5 flex justify-center rounded-xl border hover:shadow-cyan-500/50 shadow-xl text-slate-950 bg-white">
         <div class=" m-4 p-20 grid place-items-center">
           <img src="./assets/emptystate-files.webp" alt="document sample">
           <h3 class="font-bold mb-3">Manage your inventory transfers</h3>
@@ -50,7 +51,7 @@
           </div>
         </div>
       </main>
-      <p class="mb-2 pe-9 text-right">⬆️ Taken from <a class="rounded-md border p-1"
+      <p class="mb-2 pe-9">⬆️ Taken from <a class="rounded-md border p-1"
           href="https://polaris.shopify.com/components/layout-and-structure/empty-state" target="_blank">Empty state
         </a>
         
@@ -59,14 +60,23 @@
     </div>
 
     <div id="comp-three">
-      <p class="mx-7 pt-4"><span class="text-sky-400 text-xl ">Media card</span><br> provide a consistent layout to present visual information to merchants. Visual media is used to provide additional
+      <p class="mx-7 pt-4 text-center"><span class="text-sky-400 text-xl">Media card</span><br> provide a consistent layout to present visual information to merchants.<br/> Visual media is used to provide additional
       context to the written information it's paired with.
       </p>
-      <main class="">
-        <div>Hello</div>
-
+      <main class="md max-w-3xl text-gray-950 container m-5 w-[70%] mx-auto border rounded-md border-slate-100 bg-white shadow hover:shadow-slate-300">
+        <img src="./assets/business-woman-smiling.jpg" alt="woman smiling"
+          class="rounded-t-md" />
+        <div class="p-5">
+          <div class="flex relative">
+            <h3 class="font-bold text-lg ">Getting Started</h3><span
+              class="dots leading-[0] ms-auto text-slate-500 hover:cursor-pointer hover:text-slate-800 text-3xl font-semibold">...</span>
+            <div class="bg-white px-3 py-2 rounded border shadow-sm absolute top-5 right-[-2rem] active-clic hover:bg-slate-50 hover:cursor-pointer">Dismiss</div>
+          </div>
+          <p class="mb-9 pt-2">Discover how Shopify can power up your entrepreneurial journey.</p>
+          <button class="py-2 hover:bg-slate-100 px-5 font-semibold border-2 rounded border-slate-300">Learn about getting
+            started</button>
       </main>
-      <p class="mb-2 pe-9 text-right">⬆️ Taken from <a class="rounded-md border p-1"
+      <p class="mb-2 pe-9 text-center">⬆️ Taken from <a class="rounded-md border p-1"
           href="https://polaris.shopify.com/components/layout-and-structure/media-card" target="_blank">Media card
         </a>
       
@@ -77,6 +87,73 @@
 
   </div>
 
+  <div id="comp-four">
+    <p class="mx-7 pt-4 text-right"><span class="text-sky-400 text-xl ">Page</span><br> Use to build the outer wrapper of a page, including the page title and associated actions.
+    </p>
+    
+    <main class="m-5 ms-auto text-black rounded-md border max-w-3xl border-slate-300 bg-stone-50">
+      <nav class="m-5 relative flex h-10 w-[95%] gap-1">
+        <button class="max-w-[2.3rem] hover:bg-slate-200 rounded border border-slate-400 p-[10px]">
+          <svg viewBox=" 20 20" class="max-h-5 max-w-[20px]">
+            <path
+              d="M17 9h-11.586l3.293-3.293a.999.999 0 1 0-1.414-1.414l-5 5a.999.999 0 0 0 0 1.414l5 5a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414l-3.293-3.293h11.586a1 1 0 1 0 0-2z"
+              fill="gray"></path>
+          </svg>
+        </button>
+        <button class="ms-auto hover:bg-slate-200 rounded border border-slate-400 p-[10px] font-medium">Duplicate</button>
+        <button class="rounded border hover:bg-slate-200 border-slate-400 p-[10px] font-medium">View on your store</button>
+        <button class="flex btn-1 hover:bg-slate-200 rounded border border-slate-400 p-[10px] font-medium">
+          Promote
+          <svg class="max-h-5 max-w-[15px]" viewBox=" 20 20" focusable="false" aria-hidden="true">
+            <path
+              d="M13.098 8h-6.196c-.751 0-1.172.754-.708 1.268l3.098 3.432c.36.399 1.055.399 1.416 0l3.098-3.433c.464-.513.043-1.267-.708-1.267Z"
+              fill="gray"></path>
+          </svg>
+          
+        </button>
+        <div
+          class="bg-white share-fb px-1 py-3 rounded border min-w-[8rem] shadow-sm absolute top-9 right-[5.5rem] active-clic2 text-sm hover:bg-slate-50 font-light hover:cursor-pointer">
+          Share on facebook</div>
+        <button
+          class="cursor-default rounded bg-slate-100 p-[10px] font-medium text-slate-500 disabled:opacity-75">Save</button>
+        <button class="rounded border hover:bg-slate-200 border-slate-400 p-1">
+          <svg viewBox="20 20" class="max-h-5 max-w-[21px]">
+            <path
+              d="M12 16a.997.997 0 0 1-.707-.293l-5-5a.999.999 0 0 1 0-1.414l5-5a.999.999 0 1 1 1.414 1.414l-4.293 4.293 4.293 4.293a.999.999 0 0 1-.707 1.707z"
+              fill="gray"></path>
+          </svg>
+        </button>
+        <button class="rounded border hover:bg-slate-200 border-slate-400 p-1">
+          <svg viewBox="20 20" class="max-h-5 max-w-[21px]">
+            <path
+              d="M8 16a.999.999 0 0 1-.707-1.707l4.293-4.293-4.293-4.293a.999.999 0 1 1 1.414-1.414l5 5a.999.999 0 0 1 0 1.414l-5 5a.997.997 0 0 1-.707.293z"
+              fill="gray"></path>
+          </svg>
+        </button>
+      </nav>
+      
+      <article class="m-5">
+        <div class=" flex content-center">
+          <h3 class=" text-xl font-semibold">3/$ inch Leather pet collar</h3>
+          <span class="ml-3 rounded-xl bg-green-200 px-2 ">Paid</span>
+        </div>
+        <p class="text-slate-500">Perfect for any pet</p>
+        <div class="mt-4 rounded-md shadow bg-white p-5">
+          <h5 class="font-semibold text-black">Credit card</h5>
+          <p class="mt-5 text-slate-700">Credit card information</p>
+        </div>
+      </article>
+    </main>
+
+    <p class="mb-2 pe-9 text-right">⬆️ Taken from <a class="rounded-md border p-1"
+        href="https://polaris.shopify.com/components/layout-and-structure/page" target="_blank">Page
+      </a>
+  
+    </p>
+    <hr />
+  
+  
+  </div>
 
 </body>
 
