@@ -217,18 +217,85 @@
     </p>
     <hr />
 
-    <div id="comp-six">
-      <p class="mx-7 pt-4"><span class="text-sky-400 text-xl ">Data table
-</span><br> Are used to organize and display all information from a data set. While a data visualization represents part of data set,
-a data table lets merchants view details from the entire set.
+    <div id="comp-six ">
+      <p class="mx-7 pt-4 text-right"><span class="text-sky-400 text-xl ">Index table
+</span><br> An index table displays a collection of objects of the same type, like orders or products. <br/> The main job of an index
+table is to help merchants get an at-a-glance of the objects to perform actions
       </p>
   
-      <main>
-
+      <main class="ms-auto relative m-5 max-w-[39rem] z-10 text-black bg-white flex rounded p-4 pt-2 shadow">
+        <form class="absolute z-30 flex flex-col gap-3 pe-5 bg-white">
+          <div class="pt-[0.12rem]"><input type="checkbox"
+              class="mycheck cursor-pointer appearance-none rounded-sm border border-slate-600 p-[.4rem] checked:bg-blue-500"
+              name="o1" id="o1" /><span class="font-medium text-slate-500 bg-[" rgba(232, 232, 232, 0.331)"]"> Order</span>
+          </div>
+          <div><input type="checkbox"
+              class="mycheck cursor-pointer appearance-none rounded-sm border border-slate-600 p-[.4rem] checked:bg-blue-500"
+              name="o2" id="o2" /><span class="font-semibold"> #1020</span></div>
+          <div><input type="checkbox" name="o3" id="o3"
+              class="mycheck cursor-pointer appearance-none rounded-sm border border-slate-600 p-[.4rem] checked:bg-blue-500" /><span
+              class="font-semibold"> #1019</span></div>
+          <div><input type="checkbox"
+              class="mycheck cursor-pointer appearance-none rounded-sm border border-slate-600 p-[.4rem] checked:bg-blue-500"
+              name="o4" id="o4" /><span class="font-semibold"> #1018</span></div>
+        </form>
+        <table class="ms-[12%]">
+          <tr class="border-b">
+            <th class="font-medium text-slate-500">Date</th>
+            <th class="font-medium text-slate-500">Customer</th>
+            <th class="font-medium text-slate-500">Total</th>
+            <th class="font-medium text-slate-500">Payment status</th>
+            <th class="font-medium text-slate-500">Fulfillment status</th>
+          </tr>
+          <tr>
+            <td>Jul 20 at 4:34pm</td>
+            <td>Jaydon Stanton</td>
+            <td>$969.44</td>
+            <td>
+              <span class="status relative">
+                <svg height="10" width="10" class="absolute left-2 top-1.5 inline">
+                  <circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3b3b3b" />
+                </svg>
+                Paid</span>
+            </td>
+            <td><span class="status relative"><svg width="10" class="absolute left-2 top-1.5 inline" height="10">
+                  <circle cx="5" cy="5" r="5" fill="white" stroke="#3b3b3b" stroke-width="1" />
+                </svg>Unfulfilled</span></td>
+          </tr>
+          <tr>
+            <td>Jul 20 at 3:46pm</td>
+            <td>Ruben Westerfelt</td>
+            <td>$701.19</td>
+            <td>
+              <span class="status relative">
+                <svg width="10" class="absolute left-2 top-1.5 inline" height="10">
+                  <circle cx="5" cy="5" r="5" fill="white" stroke="#3b3b3b" stroke-width="1" />
+                  <path d="M0,5 a1,1 0 1,0 10,0" fill="#3b3b3b" />
+                </svg>Partially paid</span>
+            </td>
+            <td><span class="status relative"><svg width="10" class="absolute left-2 top-1.5 inline" height="10">
+                  <circle cx="5" cy="5" r="5" fill="white" stroke="#3b3b3b" stroke-width="1" />
+                </svg>Unfulfilled</span></td>
+          </tr>
+          <tr>
+            <td>Jul 20 at 3:44pm</td>
+            <td>Dr Phi</td>
+            <td>$369.18</td>
+            <td>
+              <span class="status relative"><svg width="10" class="absolute left-2 top-1.5 inline" height="10">
+                  <circle cx="5" cy="5" r="5" fill="#3b3b3b" />
+                </svg>
+                Paid</span>
+            </td>
+            <td><span class="status relative"><svg height="10" width="10" class="absolute left-2 top-1.5 inline">
+                  <circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3b3b3b" />
+                </svg>Fulfilled</span></td>
+          </tr>
+        </table>
       </main>
 
-      <p class="mb-2 ps-[40%] text-left">⬆️ Taken from <a class="rounded-md border p-1"
-          href="https://polaris.shopify.com/components/tables/data-table" target="_blank">Data table
+      <p class="mb-2 pe-[30%] text-right">⬆️ Taken from <a class="rounded-md border p-1"
+          href="https://polaris.shopify.com/components/tables/index-table" target="_blank">Index table
         </a>
       </p>
       <hr />
